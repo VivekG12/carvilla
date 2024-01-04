@@ -24,15 +24,15 @@ const Welcomebutton = styled.button`
 
 export const NewCarInternal = (props) => {
   return (
-    <div class="new-cars-item">
-      <div class="single-new-cars-item">
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <div class="new-cars-img">
-              <Scrollimg><img src={props.data.imageURL} /></Scrollimg>
+    <div className="new-cars-item">
+      <div className="single-new-cars-item">
+        <div className="row">
+          <div className="col-md-7 col-sm-12">
+            <div className="new-cars-img">
+              <Scrollimg><img src={props.data.imageURL} alt=""/></Scrollimg>
             </div>
           </div>
-          <div class="col-md-5 col-sm-12">
+          <div className="col-md-5 col-sm-12">
             <Newcartxt>
               <Newcartxth2><a href="#">{props.data.heading}</a></Newcartxth2>
               <p>

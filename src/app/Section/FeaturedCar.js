@@ -16,7 +16,7 @@ export const FeaturedCar = () => {
       wheel:'3100MI',
       engine:'240HP',
       type:'automatic',
-      name:'BMW 6-series gran coupe',
+      name:'BMW 6-series gran coupe 1',
       price:'$89,395',
       detail:'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.',
       imageURL:'/images/featured-cars/fc1.png'
@@ -26,7 +26,7 @@ export const FeaturedCar = () => {
       wheel:'3100MI',
       engine:'240HP',
       type:'automatic',
-      name:'chevrolet camaro wmv20',
+      name:'chevrolet camaro wmv20 2',
       price:'$66,575',
       detail:'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.',
       imageURL:'/images/featured-cars/fc2.png'
@@ -36,7 +36,7 @@ export const FeaturedCar = () => {
       wheel:'3100MI',
       engine:'240HP',
       type:'automatic',
-      name:'BMW 6-series gran coupe',
+      name:'BMW 6-series gran coupe 3',
       price:'$89,395',
       detail:'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.',
       imageURL:'/images/featured-cars/fc3.png'
@@ -46,7 +46,7 @@ export const FeaturedCar = () => {
       wheel:'3100MI',
       engine:'240HP',
       type:'automatic',
-      name:'BMW 6-series gran coupe',
+      name:'BMW 6-series gran coupe 4',
       price:'$89,395',
       detail:'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.',
       imageURL:'/images/featured-cars/fc4.png'
@@ -58,7 +58,7 @@ export const FeaturedCar = () => {
       wheel:'3100MI',
       engine:'240HP',
       type:'automatic',
-      name:'BMW 6-series gran coupe',
+      name:'BMW 6-series gran coupe 5',
       price:'$89,395',
       detail:'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.',
       imageURL:'/images/featured-cars/fc5.png'
@@ -68,7 +68,7 @@ export const FeaturedCar = () => {
       wheel:'3100MI',
       engine:'240HP',
       type:'automatic',
-      name:'BMW 6-series gran coupe',
+      name:'BMW 6-series gran coupe 6',
       price:'$89,395',
       detail:'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.',
       imageURL:'/images/featured-cars/fc6.png'
@@ -78,7 +78,7 @@ export const FeaturedCar = () => {
       wheel:'3100MI',
       engine:'240HP',
       type:'automatic',
-      name:'BMW 6-series gran coupe',
+      name:'BMW 6-series gran coupe 7',
       price:'$89,395',
       detail:'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.',
       imageURL:'/images/featured-cars/fc7.png'
@@ -88,7 +88,7 @@ export const FeaturedCar = () => {
       wheel:'3100MI',
       engine:'240HP',
       type:'automatic',
-      name:'BMW 6-series gran coupe',
+      name:'BMW 6-series gran coupe 8',
       price:'$89,395',
       detail:'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.',
       imageURL:'/images/featured-cars/fc8.png'

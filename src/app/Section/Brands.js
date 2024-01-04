@@ -9,35 +9,35 @@ const Brand = styled.section`
 export const Brands = () => {
   return (
     <Brand>
-      <div class="container">
-        <div class="brand-area">
+      <div className="container">
+        <div className="brand-area">
           <OwlCarousel>
-            <div class="item">
+            <div className="item">
               <a href="#">
                 <img src="/images/brand/br1.png" alt="brand-image" />
               </a>
             </div>
-            <div class="item">
+            <div className="item">
               <a href="#">
                 <img src="/images/brand/br2.png" alt="brand-image" />
               </a>
             </div>
-            <div class="item">
+            <div className="item">
               <a href="#">
                 <img src="/images/brand/br3.png" alt="brand-image" />
               </a>
             </div>
-            <div class="item">
+            <div className="item">
               <a href="#">
                 <img src="/images/brand/br4.png" alt="brand-image" />
               </a>
             </div>
-            <div class="item">
+            <div className="item">
               <a href="#">
                 <img src="/images/brand/br5.png" alt="brand-image" />
               </a>
             </div>
-            <div class="item">
+            <div className="item">
               <a href="#">
                 <img src="/images/brand/br6.png" alt="brand-image" />
               </a>

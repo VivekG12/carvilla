@@ -15,23 +15,23 @@ const Newcarcontent = styled.div`
 
 export const NewCar = () => {
 
-  const newcar = [
+  const newcarArr = [
     {
-      heading:'Chevrolet Camaro ZA100',
+      heading:'Chevrolet Camaro ZA100 1',
       paragraph1:'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       paragraph2:'Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
       buttontxt:'View Details',
       imageURL:"/images/new-cars-model/ncm1.png"
     },
     {
-      heading:'Chevrolet Camaro ZA100',
+      heading:'Chevrolet Camaro ZA100 2',
       paragraph1:'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       paragraph2:'Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
       buttontxt:'View Details',
       imageURL:"/images/new-cars-model/ncm2.png"
     },
     {
-      heading:'Chevrolet Camaro ZA100',
+      heading:'Chevrolet Camaro ZA100 3',
       paragraph1:'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       paragraph2:'Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
       buttontxt:'View Details',
@@ -47,7 +47,7 @@ export const NewCar = () => {
         </div>
         <Newcarcontent>
           <OwlCarousel items={1} loop nav margin={8}>
-            {newcar.map((i) => (<NewCarInternal key={i.heading} data={i} />))}
+            {newcarArr.map((i) => (<NewCarInternal key={i.heading} data={i} />))}
           </OwlCarousel>
         </Newcarcontent>
       </div>

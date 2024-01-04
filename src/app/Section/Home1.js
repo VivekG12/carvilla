@@ -19,7 +19,7 @@ height: 100%;
 background: rgba(42, 45, 84, 0.60);
 }
 `
-const Welcomeherotext = styled.text`
+const Welcomeherotext = styled.div`
 text-align: center;
 padding:290px 0 372px;
 `
@@ -98,7 +98,7 @@ const Modelformcontrol = styled.select`
   color: #888f9d;
   text-transform: capitalize;
 `
-export const Home = () => {
+export const Home1 = () => {
   return (
     <Welcomehero>
       <div className='container'>
@@ -138,7 +138,7 @@ export const Home = () => {
                     </Modelselecticon>
                   </Singlemodelsearch>
                 </div>
-                <div class="col-md-offset-1 col-md-2 col-sm-12">
+                <div className="col-md-offset-1 col-md-2 col-sm-12">
                   <Singlemodelsearch>
 										<Singlemodelsearchh2>select make</Singlemodelsearchh2>
 										<Modelselecticon>
@@ -162,7 +162,7 @@ export const Home = () => {
 										</Modelselecticon>
 									</Singlemodelsearch>
 								</div>
-                <div class="col-md-offset-1 col-md-2 col-sm-12">
+                <div className="col-md-offset-1 col-md-2 col-sm-12">
                   <Singlemodelsearch>
 										<Singlemodelsearchh2>select model</Singlemodelsearchh2>
 										<Modelselecticon>
@@ -186,9 +186,9 @@ export const Home = () => {
 										</Modelselecticon>
 									</Singlemodelsearch>
 								</div>
-                <div class="col-md-2 col-sm-12">
-									<div class="single-model-search text-center">
-										<button class="welcome-btn model-search-btn" onclick="window.location.href='#'">
+                <div className="col-md-2 col-sm-12">
+									<div className="single-model-search text-center">
+										<button className="welcome-btn model-search-btn" onClick={()=>window.location.href='#'}>
 											search
 										</button>
 									</div>
