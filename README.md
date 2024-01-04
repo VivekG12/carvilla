@@ -1,2 +1,0 @@
-# carvilla
-CarVilla learning project
