@@ -1,49 +1,45 @@
 import React from "react";
 import { styled } from "styled-components";
 import OwlCarousel from "react-owl-carousel";
+import { BrandsInternal } from "../Components/BrandsInternal";
 
 const Brand = styled.section`
   padding: 120px 0;
 `
+const Brandarea = styled.div`
+  position: relative;
+`
 
 export const Brands = () => {
+ 
+  const brandimage = [
+    {
+      brandimg:'/images/brand/br1.png'
+    },
+    {
+      brandimg:'/images/brand/br2.png'
+    },
+    {
+      brandimg:'/images/brand/br3.png'
+    },
+    {
+      brandimg:'/images/brand/br4.png'
+    },
+    {
+      brandimg:'/images/brand/br5.png'
+    },
+    {
+      brandimg:'/images/brand/br6.png'
+    },
+  ]
   return (
-    <Brand>
+    <Brand id="Brands">
       <div className="container">
-        <div className="brand-area">
-          <OwlCarousel>
-            <div className="item">
-              <a href="#">
-                <img src="/images/brand/br1.png" alt="brand-image" />
-              </a>
-            </div>
-            <div className="item">
-              <a href="#">
-                <img src="/images/brand/br2.png" alt="brand-image" />
-              </a>
-            </div>
-            <div className="item">
-              <a href="#">
-                <img src="/images/brand/br3.png" alt="brand-image" />
-              </a>
-            </div>
-            <div className="item">
-              <a href="#">
-                <img src="/images/brand/br4.png" alt="brand-image" />
-              </a>
-            </div>
-            <div className="item">
-              <a href="#">
-                <img src="/images/brand/br5.png" alt="brand-image" />
-              </a>
-            </div>
-            <div className="item">
-              <a href="#">
-                <img src="/images/brand/br6.png" alt="brand-image" />
-              </a>
-            </div>
+        <Brandarea>
+          <OwlCarousel items={6} loop nav margin={10}>
+            {brandimage.map((i) => (<BrandsInternal key={i.brandimg} data={i}/>))}
           </OwlCarousel>
-        </div>
+        </Brandarea>
       </div>
     </Brand>
   )

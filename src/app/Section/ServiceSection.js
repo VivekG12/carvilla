@@ -25,7 +25,7 @@ export const ServiceSection = () => {
   console.log('hello from obj');
 
   return (
-    <Service>
+    <Service id="ServiceSection">
       <div className="container">
         <div className="service-content">
           <div className="row">

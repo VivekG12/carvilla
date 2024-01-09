@@ -8,6 +8,26 @@ const Featuredcar = styled.section`
 const Featuredcarcontent = styled.div`
   padding-top:96px;
 `
+const Sectionheader = styled.div`
+  position: relative;
+  text-align: center;
+  h2 {
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 35px;
+  }
+  h2:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -42px;
+    background: #4e4ffa;
+  }
+`
 
 export const FeaturedCar = () => {
   const store = [
@@ -96,12 +116,12 @@ export const FeaturedCar = () => {
   ];
 
   return (
-    <Featuredcar>
+    <Featuredcar id="FeaturedCar">
       <div className="container">
-        <div className="section-header">
+        <Sectionheader>
           <p>checkout <span>the</span> featured cars</p>
           <h2>featured cars</h2>
-        </div>
+        </Sectionheader>
         <Featuredcarcontent>
           <div className="row">
             {store.map((i) => (<FeaturedCarInternal key={i.name} data={i} />))}

@@ -12,6 +12,17 @@ const Singleserviceitem = styled.div`
   -ms-transition:.3s linear; 
   -o-transition:.3s linear;
   transition: .3s linear;
+  h2 {
+    margin: 0;
+    color: #444a57;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  h2 a {
+    font-size:20px;
+    margin: 35px 0 20px;
+  }
 `
 
 const Singleserviceicon = styled.div`

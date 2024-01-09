@@ -1,100 +1,66 @@
 import React from "react"
+import OwlCarousel from "react-owl-carousel"
 import { styled } from "styled-components"
+import { ClientsInternal } from "../Components/ClientsInternal"
 
 const Clientssay = styled.section`
   padding:115px 0 80px;
   background: #f8f9fb;
 `
-const Testimonialimg = styled.div`
-  margin-right: 5px;
-  border-radius:50%;
-  -webkit-transition: .3s; 
-  -moz-transition:.3s; 
-  -ms-transition:.3s; 
-  -o-transition:.3s;
-  transition: .3s;
-`
-const Testimonialpersonh2 = styled.h2`
-  font-size: 16px;
-  color: #5e6778;
-  font-weight: 600;
-`
-const Testimonialpersonh4 = styled.h4`
-  font-size: 16px;
-  color: #5e6778;
-  font-weight: 600;
-  margin-top:10px;
+const Sectionheader = styled.div`
+  position: relative;
+  text-align: center;
+
+  h2 {
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 35px;
+    text-transform:capitalize;
+  }
+  h2:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -42px;
+    background: #4e4ffa;
+  }
 `
 export const Clients = () => {
+
+  const car = [
+    {
+      clientimage:"/images/clients/c1.png",
+      comment:'Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit.',
+      name:'Tomas lili',
+      address:'New York',
+    },
+    {
+      clientimage:"/images/clients/c2.png",
+      comment:'Seduced ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit.',
+      name:'Romy Rain',
+      address:'London',
+    },
+    {
+      clientimage:"/images/clients/c3.png",
+      comment:'Sed ultimate pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit.',
+      name:'John Doe',
+      address:'Washington',
+    },
+  ]
   return (
     <Clientssay>
       <div className="container">
-        <div className="section-header">
+        <Sectionheader>
           <h2>what our clients say</h2>
-        </div>
+        </Sectionheader>
         <div className="row">
-          <div className="owl-carousel testimonial-carousel">
-            <div className="col-sm-3 col-xs-12">
-              <div className="single-testimonial-box">
-                  <div className="testimonial-description">
-                      <div className="testimonial-info">
-                        <Testimonialimg>  
-                          <img src="assets/images/clients/c1.png" alt="image of clients person" />
-                        </Testimonialimg>
-                      </div>
-                      <div className="testimonial-comment">
-                        <p>
-                          Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit. 
-                        </p>
-                      </div>
-                      <div className="testimonial-person">
-                        <Testimonialpersonh2><a href="#">tomas lili</a></Testimonialpersonh2>
-                        <Testimonialpersonh4>new york</Testimonialpersonh4>
-                      </div>
-                  </div>
-              </div>
-            </div>
-            <div className="col-sm-3 col-xs-12">
-              <div className="single-testimonial-box">
-                <div className="testimonial-description">
-                  <div className="testimonial-info">
-                    <Testimonialimg>
-                      <img src="assets/images/clients/c2.png" alt="image of clients person" />
-                    </Testimonialimg>
-                  </div>
-                  <div className="testimonial-comment">
-                    <p>
-                      Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit. 
-                    </p>
-                  </div>
-                  <div className="testimonial-person">
-                    <h2><a href="#">romi rain</a></h2>
-                    <h4>london</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-3 col-xs-12">
-              <div className="single-testimonial-box">
-                <div className="testimonial-description">
-                  <div className="testimonial-info">
-                    <Testimonialimg>
-                      <img src="assets/images/clients/c3.png" alt="image of clients person" />
-                    </Testimonialimg>
-                  </div>
-                  <div className="testimonial-comment">
-                    <p>
-                      Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit. 
-                    </p>
-                  </div>
-                  <div className="testimonial-person">
-                    <h2><a href="#">john doe</a></h2>
-                    <h4>washington</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <OwlCarousel loop nav margin={10}>
+            {car.map((i) => (<ClientsInternal key={i.name} data={i}/>))}
+          </OwlCarousel>
         </div>
       </div>
     </Clientssay>

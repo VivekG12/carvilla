@@ -14,11 +14,11 @@ export const Featuredcarsimg = styled.div`
 `
 export const Featuredmodelinfo = styled.div`
   padding:12px 7px;
-`
-export const Featuredmodelinfop = styled.p`
-  font-size: 12px;
-  color: #8c92a0;
-  text-transform: capitalize;
+  p {
+    font-size: 12px;
+    color: #8c92a0;
+    text-transform: capitalize;
+  }
 `
 export const Featuredmispan = styled.span`
   display: inline-block;
@@ -27,6 +27,20 @@ export const Featuredmispan = styled.span`
 export const Featuredhpspan = styled.span`
   display: inline-block;
   margin-right: 10px;
+`
+const Featuredcarstxt = styled.div`
+  margin:21px 0 47px;
+
+  h2 a {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  h3 p {
+    font-size: 13px;
+  }
 `
 
 export const FeaturedCarInternal = (props) => {
@@ -38,21 +52,21 @@ export const FeaturedCarInternal = (props) => {
             <img src={props.data.imageURL} alt="cars" />
         </Featuredcarsimg>
         <Featuredmodelinfo>
-          <Featuredmodelinfop>
-          {props.data.model}
-          <Featuredmispan>{props.data.wheel}</Featuredmispan> 
-          <Featuredhpspan>{props.data.engine}</Featuredhpspan>
-          {props.data.type}
-          </Featuredmodelinfop>
+          <p>
+            {props.data.model}
+            <Featuredmispan>{props.data.wheel}</Featuredmispan> 
+            <Featuredhpspan>{props.data.engine}</Featuredhpspan>
+            {props.data.type}
+          </p>
         </Featuredmodelinfo>
         </Featuredimgbox>
-        <div className="featured-cars-txt">
-        <h2><a href="#">{props.data.name}</a></h2>
-        <h3>{props.data.price}</h3>
-        <p>
-          {props.data.detail} 
-        </p>
-        </div>
+        <Featuredcarstxt>
+          <h2><a href="#">{props.data.name}</a></h2>
+          <h3>{props.data.price}</h3>
+          <p>
+            {props.data.detail} 
+          </p>
+        </Featuredcarstxt>
       </div>
     </div>
   )

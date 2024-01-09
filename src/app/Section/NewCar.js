@@ -12,7 +12,34 @@ const Newcars = styled.section`
 const Newcarcontent = styled.div`
   padding-top:96px;
 `
+const Sectionheader = styled.div`
+  position: relative;
+  text-align: center;
 
+  h2 {
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 35px;
+    text-transform:capitalize;
+  }
+  h2:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -42px;
+    background: #4e4ffa;
+  }
+  p {
+    color: #444a57;
+    text-transform: capitalize;
+    margin-bottom:10px;
+    text-transform:capitalize;
+  }
+`
 export const NewCar = () => {
 
   const newcarArr = [
@@ -39,12 +66,12 @@ export const NewCar = () => {
     },
   ]
   return (
-    <Newcars>
+    <Newcars id="NewCar">
       <div className="container">
-        <div className="section-header">
+        <Sectionheader>
           <p>checkout <span>the</span> latest cars</p>
           <h2>newest cars</h2>
-        </div>
+        </Sectionheader>
         <Newcarcontent>
           <OwlCarousel items={1} loop nav margin={8}>
             {newcarArr.map((i) => (<NewCarInternal key={i.heading} data={i} />))}

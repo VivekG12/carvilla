@@ -1,6 +1,4 @@
 'use client'
-import Image from 'next/image'
-import styles from './page.module.css'
 import { ServiceSection } from './Section/ServiceSection';
 import { Home1 } from './Section/Home1';
 import { FeaturedCar } from './Section/FeaturedCar';
@@ -8,6 +6,7 @@ import { NewCar } from './Section/NewCar';
 import { Clients } from './Section/Clients';
 import { Brands } from './Section/Brands';
 import 'bootstrap/dist/css/bootstrap.css'
+import Footer from './Section/Footer';
 
 export default function Home() {
   return (
@@ -99,13 +98,14 @@ export default function Home() {
     //     </a>
     //   </div>
     // </main>
-    <div className="App" style={{textAlign: "center"}}>
+    <div className="App">
       <Home1 />
       <ServiceSection />
       <NewCar />
       <FeaturedCar />
       <Clients />
       <Brands />
+      <Footer />
     </div>
 
   )

@@ -2,24 +2,39 @@ import React from "react"
 import { styled } from "styled-components"
 
 const Scrollimg = styled.div`
-  height: 60px !important;
-  width:10% !important;
+  height: 60px;
+  width:80%;
 `
 const Newcartxt = styled.div`
   margin-left: 29px;
   margin-bottom: 30px;
-`
-const Newcartxth2 = styled.h2`
-  font-size:  30px;
-  font-weight:  500;
-  margin-bottom: 26px;
+
+  h2 a {
+    font-size:  30px;
+    font-weight:  500;
+    margin-bottom: 26px;
+  }
 `
 const Newcarspara2 = styled.p`
   margin-top: 30px;
 `
-const Welcomebutton = styled.button`
+const Welcomebutton = styled.div`
   width: 176px;
   margin-top: 32px;
+  button {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    background: #4e4ffa;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 55px;
+    -webkit-transition: .3s linear; 
+    -moz-transition:.3s linear; 
+    -ms-transition:.3s linear; 
+    -o-transition:.3s linear;
+    transition: .3s linear;
+  }
 `
 
 export const NewCarInternal = (props) => {
@@ -34,7 +49,7 @@ export const NewCarInternal = (props) => {
           </div>
           <div className="col-md-5 col-sm-12">
             <Newcartxt>
-              <Newcartxth2><a href="#">{props.data.heading}</a></Newcartxth2>
+              <h2><a href="#">{props.data.heading}</a></h2>
               <p>
                 {props.data.paragraph1}
               </p>
@@ -42,7 +57,9 @@ export const NewCarInternal = (props) => {
                 {props.data.paragraph2}
               </Newcarspara2>
               <Welcomebutton>
-                {props.data.buttontxt}
+                <button>
+                  {props.data.buttontxt}
+                </button>
               </Welcomebutton>
             </Newcartxt>
           </div>
